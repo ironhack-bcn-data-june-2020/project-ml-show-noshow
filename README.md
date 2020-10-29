@@ -1,4 +1,4 @@
-# Module 3 - Project 2 (ML) - Show | No Show.
+# Module 3 - Project 1 (ML) - Show | No Show.
 
 ### Context
 A person makes a doctor appointment, receives all the instructions and no-show. Who to blame?
