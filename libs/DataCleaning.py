@@ -3,6 +3,7 @@
 
 import pandas as pd
 import numpy as np
+from sklearn.impute import KNNImputer
 
 def transform_dates_to_date_dtype(df,columns):
     '''
@@ -18,3 +19,8 @@ def transform_dates_to_date_dtype(df,columns):
             df[col] = pd.to_datetime(df[col])
         except: #TODO CAPTURE ERROR TYPE
             print('AN ERROR OCURRED')
+
+            
+def fill_missing_values_with_knn(df):
+    imputer = KNNImputer()
+    return imputer.fit_transform(df)
