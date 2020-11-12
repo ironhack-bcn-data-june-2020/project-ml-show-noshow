@@ -24,3 +24,9 @@ def transform_dates_to_date_dtype(df,columns):
 def fill_missing_values_with_knn(df):
     imputer = KNNImputer()
     return imputer.fit_transform(df)
+
+
+def transform_date(df, col):
+    df['AppointmentDay_DOW']=df[col].dt.day_name()
+    df['AppointmentDay_month'] = df[col].dt.month_name()
+    return df
