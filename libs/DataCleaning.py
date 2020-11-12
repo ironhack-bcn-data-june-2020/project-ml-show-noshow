@@ -27,6 +27,6 @@ def fill_missing_values_with_knn(df):
 
 
 def transform_date(df, col):
-    df[‘AppointmentDay_DOW’]=df[col].dt.day_name()
-    df[‘AppointmentDay_month’] = df[col].dt.month_name()
+    df['AppointmentDay_DOW']=df[col].dt.day_name()
+    df['AppointmentDay_month'] = df[col].dt.month_name()
     return df
